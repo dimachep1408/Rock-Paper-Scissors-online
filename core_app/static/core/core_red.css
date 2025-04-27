@@ -4,18 +4,47 @@
 }
 
 body {
-    background-color: rgb(194, 0, 0);
+    background-color: rgb(157, 63, 63);
 }
 
-#divButtons {
+main {
     display: flex;
-    gap: 15px;
     align-items: center;
     justify-content: center;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 #divButtons * {
     width: 150px;
     height: 150px
+}
+
+#divButtons {
+    gap: 15px;
+    width: 495px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#choosed {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#choosed img {
+    width: 100px;
+    height: 100px;
+}
+
+#choosed p {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
 }

@@ -6,13 +6,13 @@ class BlueTeamConsumer(AsyncWebsocketConsumer):
         await self.accept()
 
     async def receive(self, text_data):
-        text_data_content = json.loads(text_data)["item"]
-        print(text_data_content)
+        text_data_content = json.loads(text_data)
+        print(text_data_content["item"],"\n", "team:", text_data_content["team"])
 
 class RedTeamConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         await self.accept()
 
     async def receive(self, text_data):
-        text_data_content = json.loads(text_data)["item"]
-        print(text_data_content)
+        text_data_content = json.loads(text_data)
+        print(text_data_content["item"], "\n", "team:", text_data_content["team"])

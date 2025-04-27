@@ -7,9 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Team</title>
     <script src="{% static 'core/core_blue.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'core/core_blue.css' %}">
 </head>
 
 <body>
+    <header></header>
+    <main>
+        <div id="divButtons">
+            <button id="rock"><img id="rockImg" src="/media/core/rock.webp"></button>
+            <button id="paper"><img id="paperImg" src="/media/core/paper.webp"></button>
+            <button id="scissors"><img id="scissorsImg" src="/media/core/scissors.webp"></button>
+            <div id="choosed">
+                <p>choosed:</p>
+                <img id="choosedImg">
+            </div>
+        </div>
+    </main>
 
 </body>
 

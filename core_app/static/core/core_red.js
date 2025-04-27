@@ -9,20 +9,27 @@ const ROCKIMG = document.getElementById("rockImg")
 const PAPERIMG = document.getElementById("paper")
 const SCISSORSIMG = document.getElementById("scissors")
 
+const CHOOSED = document.getElementById("choosed")
+const CHOOSEDIMG = document.getElementById("choosedImg")
+
+
 ROCK.addEventListener("click", () => {
 
-    SOCKET.send(JSON.stringify({ "item": "rock" }))
-
+    SOCKET.send(JSON.stringify({ "item": "rock", "team": "red" }))
+    CHOOSED.style.display = "block"
+    CHOOSEDIMG.src = "/media/core/rock.webp"
 })
 
 PAPER.addEventListener("click", () => {
 
-    SOCKET.send(JSON.stringify({ "item": "paper" }))
-
+    SOCKET.send(JSON.stringify({ "item": "paper", "team": "red" }))
+    CHOOSED.style.display = "block"
+    CHOOSEDIMG.src = "/media/core/paper.webp"
 })
 
 SCISSORS.addEventListener("click", () => {
 
-    SOCKET.send(JSON.stringify({ "item": "scissors" }))
-
+    SOCKET.send(JSON.stringify({ "item": "scissors", "team": "red" }))
+    CHOOSED.style.display = "block"
+    CHOOSEDIMG.src = "/media/core/scissors.webp"
 })
