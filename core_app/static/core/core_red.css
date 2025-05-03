@@ -29,17 +29,17 @@ main {
 }
 
 #choosed {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
-    justify-content: center;
     align-items: center;
-    display: none;
+    justify-content: center;
 }
 
 #choosed img {
     width: 100px;
     height: 100px;
+    background-color: aliceblue;
 }
 
 #choosed p {
@@ -47,4 +47,15 @@ main {
     text-align: center;
     color: white;
     font-weight: 400;
+}
+
+#isEnough {
+    display: none;
+}
+
+#countdown_or_warning {
+    color: white;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
 }
